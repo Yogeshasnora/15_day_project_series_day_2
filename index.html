@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Memory Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Memory match game give it a try</h1>
+
+<div id="difficultyContainer">
+  <label style="color:var(--accent); font-weight:600; margin-right:10px;">Difficulty:</label>
+  <select id="difficulty">
+    <option value="easy">Easy (9 Cards)</option>
+    <option value="intermediate" selected>Intermediate (16 Cards)</option>
+    <option value="advanced">Advanced (24 Cards)</option>
+  </select>
+</div>
+
+<div class="board" id="board"></div>
+<div class="win" id="winMessage">Hurrey! You Matched All Cards! </div>
+<button id="resetBtn">Restart Game</button>
+<script src="script.js"></script>
+
+</body>
+</html>
